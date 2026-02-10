@@ -1,26 +1,28 @@
-# Scaffold Inspection Drone 🚁
-
-An autonomous drone system that uses computer vision and depth sensing to inspect suspension scaffolds and detect safety violations, specifically identifying fake or improperly installed guardrails.
+# Scaffold Inspection Drone (Test Files)
+- Test Files include Software in the Loop check
+- Depth Camera check
+- Detection with depth check
 
 ## 🎯 Project Overview
 
-This project combines drone technology, Intel RealSense depth cameras, and YOLOv8 object detection to automate scaffold safety inspections. The system can:
+This project combines a Jetson Nano, Intel RealSense depth cameras, and YOLOv8 object detection to automate scaffold safety inspections. The system can:
 
 - Detect suspension scaffolds and guardrails in real-time
-- Verify guardrail authenticity by comparing relative sizes
-- Provide depth information for spatial awareness
-- Operate autonomously via DroneKit integration
+- Verify guardrail by checking midrail presence
+- Provide depth information for the guardrail
 
-## 🔧 Hardware Requirements
+https://github.com/user-attachments/assets/ff68ee72-9c8f-45f5-b728-6ec91cd5a969
 
-- **Drone**: Compatible with MAVLink protocol (tested with ArduPilot/PX4)
-- **Camera**: Intel RealSense Depth Camera (D435/D455 recommended)
-- **Computing**: Onboard computer (Raspberry Pi 4, Jetson Nano, or laptop)
+## 🔧 Hardware
+
+- **Drone**: Compatible with MAVLink protocol (tested with PX4)
+- **Camera**: Intel RealSense Depth Camera (D435)
+- **Computing**: Onboard computer (Jetson Nano)
 - **Optional**: Ground control station for monitoring
 
 ## 📋 Software Requirements
 
-- Python 3.8+
+- Python 3.8+ (3.6 for Jetson Nano)
 - CUDA-capable GPU (recommended for faster inference)
 - See `requirements.txt` for full dependency list
 
