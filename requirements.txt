@@ -1,0 +1,23 @@
+# Core Dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+ultralytics>=8.0.0
+
+# Intel RealSense
+pyrealsense2>=2.50.0
+
+# Drone Control
+dronekit>=2.9.2
+dronekit-sitl>=3.3.0
+pymavlink>=2.4.0
+
+# Deep Learning (for YOLO)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Optional: For GPU acceleration
+# cudatoolkit==11.8  # Uncomment if using CUDA
+
+# Utilities
+matplotlib>=3.5.0
+Pillow>=9.0.0
